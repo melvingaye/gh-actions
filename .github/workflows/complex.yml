@@ -1,6 +1,30 @@
 name: Complex workflow
 
-on:
-  push:
-    branches:
-      - 'ch_2_challenge'
+on: push
+
+jobs:
+  job1:
+    name: first job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1
+        run: date
+  job2:
+    name: second job
+    runs-on: windows-latest
+    steps:
+      - name: step 1
+        run: Get-Date
+  job3:
+    name: third job
+    runs-on: macos-latest
+    steps:
+      - name: step 1
+        run: date
+  job4:
+    needs: [job1, job2, job3]
+    name: fourth job
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1
+        run: date
