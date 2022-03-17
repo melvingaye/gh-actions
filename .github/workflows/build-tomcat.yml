@@ -1,6 +1,9 @@
 name: Build Tomcat
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'ch_3_3'
 
 jobs:
   build:
