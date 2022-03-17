@@ -1,0 +1,6 @@
+name: Complex workflow
+
+on:
+  push:
+    branches:
+      - 'ch_2_challenge'
