@@ -1,3 +1,3 @@
 Github actions via linkedin learning
 
-# Build Status: ![](https://github.com/melvingaye/gh-actions/CI/workflows/badge.svg)
+![Staging](https://github.com/melvingaye/gh-actions/actions/workflows/hello-world.yml/badge.svg)
